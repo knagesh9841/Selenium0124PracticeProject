@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-10T00:23:03 IST" name="SeleniumTesting" finished-at="2024-01-10T00:23:16 IST" duration-ms="12856">
+    <groups>
+    </groups>
+    <test started-at="2024-01-10T00:23:03 IST" name="testngTest" finished-at="2024-01-10T00:23:16 IST" duration-ms="12856">
+      <class name="com.onenetwork.testcases.DownloadTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.onenetwork.testcases.DownloadTest@6f8e8894]" started-at="2024-01-10T00:23:03 IST" name="setUp" finished-at="2024-01-10T00:23:07 IST" duration-ms="4216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="downloadTest()[pri:0, instance:com.onenetwork.testcases.DownloadTest@6f8e8894]" started-at="2024-01-10T00:23:07 IST" name="downloadTest" description="Download Functionality." finished-at="2024-01-10T00:23:16 IST" duration-ms="8042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.onenetwork.testcases.DownloadTest@6f8e8894]" started-at="2024-01-10T00:23:16 IST" name="tearDown" finished-at="2024-01-10T00:23:16 IST" duration-ms="547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.onenetwork.testcases.DownloadTest -->
+    </test> <!-- testngTest -->
+  </suite> <!-- SeleniumTesting -->
+</testng-results>

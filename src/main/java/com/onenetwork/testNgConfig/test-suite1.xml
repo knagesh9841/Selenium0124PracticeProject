@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SeleniumTesting" parallel = "tests" thread-count = "2">
+
+	<!-- <listeners> <listener class-name="com.onenetwork.listeners.TestListener"/> 
+		</listeners> -->
+
+
+	<test name="testngTest1">
+
+		<!-- <parameter name="browser" value="chrome" /> -->
+
+		<classes>
+		
+		<class name="com.onenetwork.testcases.FrameTest" />
+			<class name="com.onenetwork.testcases.WindowTest" />
+			<class name="com.onenetwork.testcases.BootStrapDropdownTest" />
+			<class name="com.onenetwork.testcases.MenuSelectionTest" />
+			<class name="com.onenetwork.testcases.CalendarTest" />
+
+			<!-- <class name="com.onenetwork.testcases.FrameTest" />
+			<class name="com.onenetwork.testcases.WindowTest" />
+			<class name="com.onenetwork.testcases.BootStrapDropdownTest" />
+			<class name="com.onenetwork.testcases.MenuSelectionTest" />
+			<class name="com.onenetwork.testcases.CalendarTest" />
+			<class name="com.onenetwork.testcases.BootStrapLoginWindowTest" />
+			<class name="com.onenetwork.testcases.LoginTest" />
+			<class name="com.onenetwork.testcases.TooltipTest" /> 
+			<class name="com.onenetwork.testcases.DownloadTest" /> -->
+			
+
+
+		</classes>
+	</test>
+	
+	
+	<test name="testngTest2">
+
+		
+
+		<classes>
+
+			<class name="com.onenetwork.testcases.BootStrapLoginWindowTest" />
+			<class name="com.onenetwork.testcases.LoginTest" />
+			<class name="com.onenetwork.testcases.TooltipTest" /> 
+			<class name="com.onenetwork.testcases.DownloadTest" />
+
+
+		</classes>
+	</test>
+
+
+
+
+</suite>
