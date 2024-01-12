@@ -36,7 +36,7 @@ public class TestListener implements ISuiteListener,ITestListener,IInvokedMethod
 		fromSuite = suite.getXmlSuite().getParameter("browsername");
 	    browsername = System.getProperty("browsername", fromSuite);
 	   
-	    Utilities.killBrowserAndDriver(browsername);
+	    //Utilities.killBrowserAndDriver(browsername);
 	    
 	}
 
@@ -47,7 +47,7 @@ public class TestListener implements ISuiteListener,ITestListener,IInvokedMethod
 		fromSuite = suite.getXmlSuite().getParameter("browsername");
 	    browsername = System.getProperty("browsername", fromSuite);
 	   
-	    Utilities.killBrowserAndDriver(browsername);
+	    //Utilities.killBrowserAndDriver(browsername);
 	    
 	    extent.flush();
 		try {

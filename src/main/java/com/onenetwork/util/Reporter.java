@@ -15,6 +15,7 @@ public class Reporter {
 	private static Logger Log = Logger.getLogger(Reporter.class.getName());
 	
 	static SoftAssert softAssert = new SoftAssert();
+	static String concat=".";
 	
 	/**
 	 * This method will used for Info reporting.
@@ -31,7 +32,7 @@ public class Reporter {
 			 
 			 	if(attachScreenshot)
 			 	{
-			 		String screenshotPath = ScreenshotCapture.getScreenshot(driver, "screeshot");
+			 		String screenshotPath = concat+ScreenshotCapture.getScreenshot(driver, "screeshot");
 					
 					TestListener.getTest().info(ExpectValue+"::"+aValue, MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 					
@@ -64,7 +65,7 @@ public class Reporter {
 
 			if(attachScreenshot)
 			{
-				String screenshotPath = ScreenshotCapture.getScreenshot(driver, "screeshot");
+				String screenshotPath = concat+ScreenshotCapture.getScreenshot(driver, "screeshot");
 
 				TestListener.getTest().pass(ExpectValue+"::"+aValue, MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 
@@ -92,7 +93,7 @@ public class Reporter {
 	{
 		
 		 try {
-				String screenshotPath = ScreenshotCapture.getScreenshot(driver, "screeshot");
+				String screenshotPath = concat+ScreenshotCapture.getScreenshot(driver, "screeshot");
 				
 				TestListener.getTest().fail(ExpectValue+"::"+aValue, MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 				

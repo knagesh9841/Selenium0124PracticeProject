@@ -28,27 +28,27 @@ public class ScreenshotCapture {
 	synchronized public static String getScreenshot(WebDriver driver, String screenshotName) throws Exception {
 		
 		
-		 File testDirectory = new File(System.getProperty("user.dir")+"\\Screenshot"); 
-		 if (!testDirectory.exists()) { 
-			 if (testDirectory.mkdir()) {
-				 System.out.println("Directory: Screenshot  is created!" ); 
-			 } else {
-				 System.out.println("Failed to create directory screenshot: "); 
-			 } 
-		 } else {
-			 System.out.println("Screenshot Directory already exists: "); 
-		 }
+		
+		  File testDirectory = new
+		  File(System.getProperty("user.dir")+"./TestReport/screenshots"); if
+		  (!testDirectory.exists()) { if (testDirectory.mkdir()) {
+		  System.out.println("Directory: Screenshot  is created!" ); } else {
+		  System.out.println("Failed to create directory screenshot: "); } } else {
+		  System.out.println("Screenshot Directory already exists: "); }
+		 
 		
 		  String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		  TakesScreenshot ts = (TakesScreenshot) driver; 
 		  File source = ts.getScreenshotAs(OutputType.FILE);
 		  
-		  String destination = System.getProperty("user.dir") +
-		  "\\Screenshot\\"+screenshotName+dateName+".png"; File finalDestination = new
-		  File(destination); FileUtils.copyFile(source, finalDestination);
 		 
-		
-		
+		  //String destination = System.getProperty("user.dir")+"\\TestReport\\screenshots\\"+screenshotName+dateName+".png";
+		  String destination = "./TestReport/screenshots/"+screenshotName+dateName+".png";
+		  File finalDestination = new File(destination); 
+		  
+		  FileUtils.copyFile(source, finalDestination);
+		 
+		 
 		 
 		/*
 		 * String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
@@ -69,7 +69,8 @@ public class ScreenshotCapture {
 		ImageIO.write(screenshot.getImage(), "PNG",finalDestination);
 		*/
 		
-		return destination;
+		  
+		return "/screenshots/"+screenshotName+dateName+".png";
 		
 	}
 
