@@ -19,10 +19,10 @@ import com.onenetwork.util.Utilities;
 
 public class TestListener implements ISuiteListener,ITestListener,IInvokedMethodListener{
 	
-	static
-	{
-		 DOMConfigurator.configure(System.getProperty("user.dir") + "\\src\\main\\java\\com\\onenetwork\\resources\\config\\log4j.xml");
-	}
+	/*
+	 * static { DOMConfigurator.configure(System.getProperty("user.dir") +
+	 * "\\src\\main\\java\\com\\onenetwork\\resources\\config\\log4j.xml"); }
+	 */
 	
 	private static ExtentReports extent = ExtentManager.createInstance();
     public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
